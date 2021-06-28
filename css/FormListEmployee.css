@@ -1,0 +1,15 @@
+.idcomp {
+    padding: 10px;
+    width: 47px;
+    background-color: #c5cefc;
+    border: none;
+    color: #4f63c9;
+    font-weight: 637;
+    border-radius: 5px;
+}
+
+.nameofcompany {
+    border: none;
+    font-size: 19px;
+    font-weight: 600;
+}
