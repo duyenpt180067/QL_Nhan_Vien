@@ -11,17 +11,38 @@
 </head>
 
 <body>
-    <div name="top header" class="row">
-        <div class="col-3">
+    <div class="row list">
+        <div class="col-3 left">
             <div class="container">
                 <div class="logo">
                     <img src="image/menu.png" alt="" title="menu">
                     <img src="image/logo.png" title="menu" alt="">
                 </div>
             </div>
+            <!-- sidebar -->
+            <div name="sidebar">
+                <ul>
+                    <li>
+                        <i class="fas fa-chart-pie"></i> Tổng quan
+                    </li>
+                    <li>
+                        <i class="fas fa-signal"></i> Báo cáo
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-pie"></i> Mua hàng
+                    </li>
+                    <li>
+                        <i class="fas fa-users"></i> Dan mục nhân viên
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i> Thiết lập hệ thống
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-9">
-            <div class="row">
+        <div class="col-9 right">
+            <!-- top head -->
+            <div class="row top-head">
                 <div class="col-6">
                     <div class="id company">
                         <input type="text" class="idcomp" value="MB">
@@ -31,24 +52,113 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <i class="far fa-bell"></i>
                     <div class="account">
+                        <i class="far fa-bell"></i>
                         <img src="image/image_account.png" alt="">
                         <input type="text" value="Mai Anh Bảo">
+                        <i class="fas fa-ellipsis-h"></i>
                     </div>
 
                 </div>
             </div>
+            <div class="row titlelist">
+                <div class="col-6">
+                    <h4>Danh sách nhân viên</h4>
+                </div>
+                <div class="col-6" style="text-align: end;">
+                    <button class="btnadd">
+                        <i class="fas fa-user-plus"></i>
+                        Thêm nhân viên
+                    </button>
+                </div>
+            </div>
+            <!-- action find -->
+            <div class="row action">
+                <div class="col-10">
+                    <div class="row">
+                        <!-- Tìm theo mã tên -->
+                        <div class="col-6 findid">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại">
+                        </div>
+                        <!-- tùy chọn phòng ban -->
+                        <div class="col-3">
+                            <select name="" id="findbydepartment" class="find_department">
+                                <option value="" selected disabled hidden>Tất cả phòng ban</option>
+                                <option value="department1">Phòng nhân sự</option>
+                                <option value="department2">Phòng đào tạo</option>
+                            </select>
+                        </div>
+                        <!-- tùy chọn vị trí -->
+                        <div class="col-3">
+                            <select name="" id="findbydepartmentjob" class="find_job">
+                                <option value="" selected disabled hidden>Tất cả vị trí</option>
+                                <option value="job1">Phòng nhân sự</option>
+                                <option value="job2">Phòng kế toán</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 reload">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+            </div>
+            <!-- list employee -->
+            <div class="tablelist">
+                <table>
+                    <thead>
+                        <tr>Mã nhân viên</tr>
+                        <tr>Họ và tên</tr>
+                        <tr>Giới tính</tr>
+                        <tr>Ngày sinh</tr>
+                        <tr>Điện thoại</tr>
+                        <tr>Email</tr>
+                        <tr>Chức vụ</tr>
+                        <tr>Phòng ban</tr>
+                        <tr>Mức lương cơ bản</tr>
+                        <tr>Tình trạng</tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NV532408</td>
+                            <td>Hồ Văn Long</td>
+                            <td>Nam</td>
+                            <td>11/08/1978</td>
+                            <td>0940458449</td>
+                            <td>cuon@example.com</td>
+                            <td>Giám đốc</td>
+                            <td>Phòng nhân sự</td>
+                            <td>17.739.391</td>
+                            <td>Đang thử việc</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- footer -->
+            <div class="footer row">
+                <div class="col-2 show">
+                    <p>Hiển thị 1-10/1000 nhân viên</p>
+                </div>
+                <div class="col-8 pages">
+                    <i class="fas fa-chevron-left"></i>
+                    <ul>
+                        <li>
+                            <button>1</button>
+                        </li>
+                        <li>
+                            <button>2</button>
+                        </li>
+                        <li>
+                            <button>3</button>
+                        </li>
+                    </ul>
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="col-2 emp-page">
+                    <p>10 nhân viên/trang</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div name="sidebar">
-
-    </div>
-    <div name="bodymain">
-
-    </div>
-    <div name="footer">
-
     </div>
 </body>
 
