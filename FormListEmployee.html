@@ -7,40 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/FormListEmployee.css">
+    <link rel="stylesheet" href="fontawesome-5.15.1/css/all.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="row list">
-        <div class="col-3 left">
+        <div class="col-2 left">
             <div class="container">
-                <div class="logo">
-                    <img src="image/menu.png" alt="" title="menu">
-                    <img src="image/logo.png" title="menu" alt="">
+                <div class="logo row">
+                    <div class="menu col-2">
+                        <img src="image/menu.png" alt="" title="menu">
+                    </div>
+                    <div class="logoimage col-10">
+                        <img src="image/logo.png" title="logo" style="width: 100%;" alt="">
+                    </div>
                 </div>
             </div>
             <!-- sidebar -->
             <div name="sidebar">
-                <ul>
-                    <li>
-                        <i class="fas fa-chart-pie"></i> Tổng quan
-                    </li>
-                    <li>
-                        <i class="fas fa-signal"></i> Báo cáo
-                    </li>
-                    <li>
-                        <i class="fas fa-chart-pie"></i> Mua hàng
-                    </li>
-                    <li>
-                        <i class="fas fa-users"></i> Dan mục nhân viên
-                    </li>
-                    <li>
-                        <i class="fas fa-cog"></i> Thiết lập hệ thống
-                    </li>
-                </ul>
+                <div><i class="fas fa-chart-pie"></i> Tổng quan</div>
+                <div><i class="fas fa-signal"></i> Báo cáo</div>
+                <div><i class="fas fa-chart-pie"></i> Mua hàng</div>
+                <div><i class="fas fa-users"></i> Dan mục nhân viên</div>
+                <div><i class="fas fa-cog"></i> Thiết lập hệ thống</div>
             </div>
         </div>
-        <div class="col-9 right">
+        <div class="col-10 right">
             <!-- top head -->
             <div class="row top-head">
                 <div class="col-6">
@@ -52,7 +45,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="account">
+                    <div class="account" style="text-align: end;">
                         <i class="far fa-bell"></i>
                         <img src="image/image_account.png" alt="">
                         <input type="text" value="Mai Anh Bảo">
@@ -79,7 +72,7 @@
                         <!-- Tìm theo mã tên -->
                         <div class="col-6 findid">
                             <i class="fas fa-search"></i>
-                            <input type="text" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại">
+                            <input type="text" style="width: calc(100% - 25px);" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại">
                         </div>
                         <!-- tùy chọn phòng ban -->
                         <div class="col-3">
@@ -99,24 +92,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 reload">
-                    <i class="fas fa-sync-alt"></i>
+                <div class="col-2 reload" style="text-align: end;">
+                    <i class="fas fa-sync-alt" style="vertical-align: -webkit-baseline-middle;"></i>
                 </div>
             </div>
             <!-- list employee -->
             <div class="tablelist">
                 <table>
                     <thead>
-                        <tr>Mã nhân viên</tr>
-                        <tr>Họ và tên</tr>
-                        <tr>Giới tính</tr>
-                        <tr>Ngày sinh</tr>
-                        <tr>Điện thoại</tr>
-                        <tr>Email</tr>
-                        <tr>Chức vụ</tr>
-                        <tr>Phòng ban</tr>
-                        <tr>Mức lương cơ bản</tr>
-                        <tr>Tình trạng</tr>
+                        <th>Mã nhân viên</th>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Ngày sinh</th>
+                        <th>Điện thoại</th>
+                        <th>Email</th>
+                        <th>Chức vụ</th>
+                        <th>Phòng ban</th>
+                        <th>Mức lương cơ bản</th>
+                        <th>Tình thạng</th>
                     </thead>
                     <tbody>
                         <tr>
@@ -137,11 +130,12 @@
             <!-- footer -->
             <div class="footer row">
                 <div class="col-2 show">
-                    <p>Hiển thị 1-10/1000 nhân viên</p>
+                    <p>Hiển thị 1-10/100 nhân viên</p>
                 </div>
                 <div class="col-8 pages">
-                    <i class="fas fa-chevron-left"></i>
                     <ul>
+                        <li><img style="height: 29px;" src="image/btn-firstpage.svg" alt=""></li>
+                        <li><img style="width: 25px;" src="image/btn-prev-page.svg" alt=""></li>
                         <li>
                             <button>1</button>
                         </li>
@@ -151,8 +145,9 @@
                         <li>
                             <button>3</button>
                         </li>
+                        <li><img style="width: 25px;" src="image/btn-next-page.svg" alt=""></li>
+                        <li><img style="height: 29px;" src="image/btn-lastpage.svg" alt=""></li>
                     </ul>
-                    <i class="fas fa-chevron-left"></i>
                 </div>
                 <div class="col-2 emp-page">
                     <p>10 nhân viên/trang</p>
